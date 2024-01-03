@@ -1,6 +1,6 @@
 import React from 'react';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+import { ComputersCanvas, StarsCanvas } from './canvas';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -24,6 +24,7 @@ const Hero: React.FC = () => {
           </p>
         </div>
       </div>
+      {/* <StarsCanvas /> */}
       <ComputersCanvas />
       <div className="absolute bottom-32 flex w-full items-center justify-center xs:bottom-10">
         <a href="#about">

@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
+import SectionsWrapper from '../hoc/SectionWrapper';
 
 const Contact: React.FC = () => {
   return <div>Contact</div>;
 };
 
-export default Contact;
+export default SectionsWrapper(Contact, 'contact');

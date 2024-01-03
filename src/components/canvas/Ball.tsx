@@ -32,7 +32,7 @@ const Ball: React.FC<IBallProps> = (props) => {
           flatShading
         />
         <Decal
-          flatShading
+          // flatShading
           map={decal}
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}

@@ -64,7 +64,7 @@ const Experience: React.FC = () => {
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline>{renderExperiences()}</VerticalTimeline>
+{/*         <VerticalTimeline>{renderExperiences()}</VerticalTimeline> */}
       </div>
     </>
   );

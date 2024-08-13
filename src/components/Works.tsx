@@ -26,7 +26,7 @@ const ProjectCard: React.FC<IProjectCardProps> = (props) => {
           <img
             src={image}
             alt={name}
-            className="h-full w-full rounded-2xl object-contain"
+            className="h-full w-full rounded-2xl object-fill"
           />
           <div
             className="card-img_hover black-gradient absolute right-0 top-0 m-3 flex h-10 w-10 cursor-pointer justify-center rounded-full"

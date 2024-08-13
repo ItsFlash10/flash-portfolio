@@ -1,7 +1,8 @@
 import React from 'react';
 import { styles } from '../styles';
-import { ComputersCanvas, StarsCanvas } from './canvas';
+import { ComputersCanvas, EarthCanvas, StarsCanvas } from './canvas';
 import { motion } from 'framer-motion';
+import { slideIn } from '../utils/motion';
 
 const Hero: React.FC = () => {
   return (
@@ -16,16 +17,24 @@ const Hero: React.FC = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hey I'm <span className="text-[#F96648]">Satyam!</span>
+            Greeting <span className="text-[#F96648]">Earthlings!</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            An ardent developer who
-            <br className=" hidden sm:block" /> always try to "TRY"
+          <p className={`${styles.heroSubText} mt-2`}>
+            I'm <span className="text-[#F96648]">Satyam Shubham</span>
+            <br className=" hidden sm:block" /> aka "Flash" who always try to
+            "TRY"
           </p>
         </div>
       </div>
-      {/* <StarsCanvas /> */}
-      <ComputersCanvas />
+      <>
+        <motion.div
+          variants={slideIn('right', 'tween', 0.2, 1)}
+          // className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
+        >
+          <StarsCanvas />
+          <EarthCanvas />
+        </motion.div>
+      </>
       <div className="absolute bottom-32 flex w-full items-center justify-center xs:bottom-10">
         <a href="#about">
           <div className="flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 border-secondary p-2">
